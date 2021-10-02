@@ -1,0 +1,92 @@
+<!-- Creating an all orders page to show All orders -->
+<!-- including the head of html -->
+<%- include('layouts/head');-%>
+
+    <body>
+        <!-- including header -->
+        <%- include('layouts/header');-%>
+            <%- include('layouts/nav');-%>
+                <section>
+                    <!-- creating a table to collect all data from database -->
+                    <table class="allOrderTable">
+                        <!-- headings of the table -->
+                        <thead>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>Province</th>
+                            <th>Visicous Rose Quantity</th>
+                            <th>Visicous Rose Cost</th>
+                            <th>Juicy Apple Quantity</th>
+                            <th>Juicy Apple Cost</th>
+                            <th>Fragile Lily Quantity</th>
+                            <th>Fragile Lily Cost</th>
+                            <th>Calm my Lavender Quantity</th>
+                            <th>Calm my Lavender Cost</th>
+                            <th>Subtotal</th>
+                            <th>Tax</th>
+                            <th>Total</th>
+                        </thead>
+                        <tbody>
+                            <% for (var order of orders){ %>
+                                <tr>
+                                <td>
+                                    <%=order.name %>
+                                </td>
+                                <td>
+                                    <%=order.email %>
+                                </td>
+                                <td>
+                                    <%=order.phone %>
+                                </td>
+                                <td>
+                                    <%=order.address %>
+                                </td>
+                                <td>
+                                    <%=order.city %>
+                                </td>
+                                <td>
+                                    <%=order.province %>
+                                </td>
+                                <td>
+                                    <%=order.rose %>
+                                </td>
+                                <td>
+                                    <%=order.roseCost %>
+                                </td>
+                                <td>
+                                    <%=order.apple %>
+                                </td>
+                                <td>
+                                    <%=order.appleCost %>
+                                </td>
+                                <td>
+                                    <%=order.lily %>
+                                </td>
+                                <td>
+                                    <%=order.lilyCost %>
+                                </td>
+                                <td>
+                                    <%=order.lavenderQuantity %>
+                                </td>
+                                <td>
+                                    <%=order.lavenderCost %>
+                                </td>
+                                <td>
+                                    <%=order.subtotal %>
+                                </td>
+                                <td>
+                                    <%=order.tax %>
+                                </td>
+                                <td>
+                                    <%=order.total %>
+                                </td>
+                            </tr>
+                                <% } %>
+                        </tbody>
+                    </table>
+                </section>
+    </body>
+    <%- include('layouts/foot');-%>

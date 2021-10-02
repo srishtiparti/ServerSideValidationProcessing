@@ -1,0 +1,27 @@
+{
+  "name": "assignment_3",
+  "version": "1.0.0",
+  "description": "Joe's online store for perfumes",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "init": "^0.1.2",
+    "ejs": "*",
+    "body-parser": "*",
+    "express-validator": "*",
+    "mongoose": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "perfume",
+    "online",
+    "store",
+    "Joe's",
+    "website"
+  ],
+  "author": "Srishti Parti",
+  "license": "ISC"
+}

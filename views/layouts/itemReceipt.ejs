@@ -1,0 +1,69 @@
+<!-- this is the item receipt with all the items that user bought -->
+<table id="itemReceipt">
+    <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Cost</th>
+    </tr>
+    <tr>
+        <!-- Quantity of Juicy apple perfume and price -->
+        <td>Juicy Apple:</td>
+        <td>
+            <%= apple%>
+        </td>
+        <td>
+            $<%= appleCost%>
+        </td>
+    </tr>
+    <!-- Quantity of Vicious Rose perfume and price -->
+    <tr>
+        <td>Vicious Rose:</td>
+        <td>
+            <%= rose%>
+        </td>
+        <td>
+            $<%= roseCost%>
+        </td>
+    </tr>
+    <!-- Quantity of Fragile Lily perfume and price -->
+    <tr>
+        <td>Fragile Lily:</td>
+        <td>
+            <%= lily%>
+        </td>
+        <td>
+            $<%= lilyCost%>
+        </td>
+    </tr>
+    <!-- Quantity of Calm my Lavender perfume and price -->
+    <tr>
+        <td>Calm my Lavender :</td>
+        <td>
+            <%= lavender%>
+        </td>
+        <td>
+            $<%= lavenderCost%>
+        </td>
+    </tr>
+    <!-- printing subtotal without tax -->
+    <tr>
+        <th colspan="2">Subtotal:</th>
+        <td>
+            $<%= subtotal%>
+        </td>
+    </tr>
+    <!-- printing tax amount -->
+    <tr>
+        <th colspan="2">Tax:</th>
+        <td>
+            $<%= tax.toFixed(2)%>
+        </td>
+    </tr>
+    <!-- printing total amount -->
+    <tr>
+        <th colspan="2">Total:</th>
+        <td>
+            $<%= total.toFixed(2)%>
+        </td>
+    </tr>
+</table>
