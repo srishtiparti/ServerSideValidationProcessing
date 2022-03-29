@@ -1,3 +1,7 @@
+# To execute
+Clone in local folder
+Run node index.js
+
 # Server Side Validation and Processing
 The validations and form processing are on the server-side only.
 # HTML Static Content -
