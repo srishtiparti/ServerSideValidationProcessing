@@ -1,27 +1,31 @@
 {
-  "name": "assignment_3",
-  "version": "1.0.0",
-  "description": "Joe's online store for perfumes",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "init": "^0.1.2",
-    "ejs": "*",
-    "body-parser": "*",
-    "express-validator": "*",
-    "mongoose": "*"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "perfume",
-    "online",
-    "store",
-    "Joe's",
-    "website"
-  ],
-  "author": "Srishti Parti",
-  "license": "ISC"
+    "name": "serversidevalidationprocessing",
+    "version": "1.0.0",
+    "description": "Clone in local folder Run node index.js",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/srishtiparti/ServerSideValidationProcessing.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/srishtiparti/ServerSideValidationProcessing/issues"
+    },
+    "homepage": "https://github.com/srishtiparti/ServerSideValidationProcessing#readme",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "dotenv": "^16.0.2",
+        "ejs": "^3.1.8",
+        "env": "0.0.2",
+        "express": "^4.18.1",
+        "express-validator": "^6.14.2",
+        "mongoose": "^6.5.5",
+        "nodemon": "^2.0.19",
+        "path": "^0.12.7"
+    }
 }
