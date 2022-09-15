@@ -25,9 +25,9 @@ myApp.use(routes)
 myApp.set('view engine', 'ejs');
 
 
-//const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
-const port = 4000
+//const port = 4000
 
 //start the server and listen to port 2391
 /***********************  Connecting to DB first before listening  ******************************************/
